@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Score Centering Test</title>
+  <style>
+    @font-face {
+  font-family: "Cursedtimer";
+  src: url("./fonts/CursedTimerULiL.ttf");
+}
+
+    body {
+      background: #1B244A;
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .score-wrapper {
+      display: flex;
+      justify-content: center;   /* horizontal centering */
+      align-items: center;       /* vertical centering */
+      width: 155px;              /* fixed size to make it obvious */
+      height: 120px;
+      background: #080001;
+      outline: 2px dashed lime;  /* boundary helps you see its box */
+    }
+    .score {
+      font-family: "Cursedtimer";
+      font-size: 90px;
+      line-height: 1;            /* eliminate any extra leading */
+      color: #F94F6D;
+      outline: 2px solid red;    /* see its own bounds */
+    }
+  </style>
+</head>
+<body>
+  <div class="score-wrapper">
+    <div class="score">18</div>
+  </div>
+</body>
+</html>

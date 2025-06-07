@@ -1,0 +1,47 @@
+/* index.css */
+
+@font-face {
+  font-family: "Cursedtimer";
+  src: url("./fonts/CursedTimerULiL.ttf");
+}
+
+body {
+  margin: 0;
+  background: #1B244A;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 34.25rem;
+  margin: 2rem auto;
+  outline: 1px solid pink;
+  color: white;
+}
+
+/* Force a known size on the wrapper so we can see centering clearly */
+.score-wrapper {
+  display: flex;
+
+  /* exactly these dimensions */
+  width: 155px;
+  height: 120px;
+
+  justify-content: center;   /* horizontally center child */
+  align-items: center;       /* vertically center child */
+
+  background-color: #080001;
+  outline: 2px dashed lime;  /* see boundary of wrapper */
+}
+
+/* The actual score box (shrinks to fit its text) */
+.score {
+  font-family: "Cursedtimer";
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 1;            /* exactly one line, no extra space */
+
+  outline: 2px solid red;    /* see boundary of the score element */
+  margin: 0;                 /* remove any default margins */
+  padding: 0;                /* remove any default padding */
+}

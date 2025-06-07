@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Cursedtimer";
+  src: url("./fonts/CursedTimerULiL.ttf");
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    /* // no max-width */
+    width: 34.25rem;
+    margin: 2rem 2rem;
+    outline: 1px solid pink;
+    background-color: #1B244A;
+    color: white;
+}
+.score-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #080001;
+    /* // no min-width and min-height */
+    width: 155px;
+    height: 120px;
+    outline: 2px dashed lime;
+}
+.score {
+    font-family: "Cursedtimer";
+    font-weight: 400;
+    font-size: 90px;
+    /* line-height: 1; */
+    color: #F94F6D;
+    outline: 2px solid red
+}
+.score-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.score-btn {
+    border: 1px solid #9AABD8;
+    background-color: transparent;
+    color: #9AABD8;
+    font-family: "Cursedtimer";
+}
+
+.team-wrapper {
+    text-align: center;
+    /* width: inherit; */
+    /* display: inline-block; */
+    /* width: 155px;
+    margin: 0 auto; */
+}
+
+.team-wrapper > h3 {
+    font-family: "Verdana";
+    font-size: 25;
+}
